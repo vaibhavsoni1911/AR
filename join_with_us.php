@@ -2,10 +2,12 @@
     if($_POST)
     {
         $to_email       = "jassirohit02@gmail.com";
-        if(!isset($_SERVER['HTTP_X_REQUESTED_WITH'])) {
+       /*
+       <!-- This is for AJAX Request -->
+       if(!isset($_SERVER['HTTP_X_REQUESTED_WITH'])) {
             print "Can't access directly!";
             exit;
-        }
+        }*/
         //Sanitize input data using PHP filter_var().
         $name = $_POST["name"];
         $email = $_POST["email"];
